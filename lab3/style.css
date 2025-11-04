@@ -1,0 +1,68 @@
+/* Using the universal selector to reset defaults [cite: 135] */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Type selector for the body [cite: 137] */
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    /* Center the calculator on the page */
+    padding-top: 50px;
+}
+
+/* ID selector for the main container [cite: 141] */
+#calculator {
+    width: 300px;
+    margin: 0 auto; /* Center the calculator */
+    background-color: #1c1c1c;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* ID selector for the display */
+#display {
+    color: white;
+    font-size: 60px;
+    text-align: right;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+/* Class selector for button rows  */
+.row {
+    /* Center the buttons within the row */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Class selector for all buttons */
+.btn {
+    /* Buttons are inline-block by default, which works with text-align: center */
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: none;
+    border-radius: 30px; /* Makes it circular */
+    font-size: 24px;
+    color: white;
+    background-color: #505050;
+}
+
+/* Class for the wide (zero) button */
+.btn.wide {
+    /* Use width to make it span, as taught in the inline-block example [cite: 180] */
+    width: 130px; 
+}
+
+/* Group selector for function buttons (AC, %, 00) [cite: 143] */
+.btn.function {
+    background-color: #D4D4D2;
+    color: #1c1c1c;
+}
+
+/* Class for operator buttons */
+.btn.operator {
+    background-color: #FF9500; /* Orange color */
+}

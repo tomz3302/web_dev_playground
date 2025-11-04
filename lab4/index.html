@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pro To-Do List</title>
+    
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app-container">
+        <h2>Omar's Super Important To-Do List</h2>
+        
+        <div class="input-area">
+            <input type="text" id="task-input" placeholder="Enter a new task...">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        
+        <div class="controls">
+            <div class="filter-group">
+                <strong>Filter:</strong>
+                <button id="filter-all">All</button>
+                <button id="filter-active">Active</button>
+                <button id="filter-completed">Completed</button>
+            </div>
+            
+            <div class="sort-group">
+                <strong>Sort:</strong>
+                <button id="sort-name">By Name</button>
+                <button id="sort-date">By Date</button>
+            </div>
+        </div>
+        
+        <ul id="task-list">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

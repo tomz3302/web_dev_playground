@@ -1,0 +1,75 @@
+/* Universal selector to reset browser defaults [cite: 135] */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Type selector for the whole page [cite: 137] */
+body {
+    /* Using font-family as shown in the CSS examples [cite: 122] */
+    font-family: Arial, sans-serif;
+}
+
+/* Group selector for headings and paragraphs to add spacing [cite: 143] */
+h1, h2, h3, p {
+    /* Using margin-bottom as shown in the examples [cite: 122] */
+    margin-bottom: 15px;
+}
+
+/* ID selector for the header [cite: 141] */
+#header {
+    background-color: #333; /* Dark background */
+    color: white; /* White text [cite: 84] */
+    padding: 20px; /* Padding from box model [cite: 153] */
+    text-align: center; /* Taught in CSS examples [cite: 122] */
+}
+
+/* Styling the links within the header */
+#header a {
+    color: white;
+    padding: 10px; /* Add spacing between links */
+}
+
+/* Class selector for the main content sections [cite: 139] */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Class for the container holding the project cards */
+.projects-container {
+    text-align: center; /* This helps center the inline-block cards */
+}
+
+/* Class selector for the individual project cards */
+.project-card {
+    /* Using display: inline-block for layout  */
+    display: inline-block;
+    width: 250px; /* Setting width as shown in the inline-block example  */
+    
+    /* Using border and border-radius from examples [cite: 122] */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    margin: 10px; /* Margin from box model [cite: 156] */
+    padding: 20px;
+    text-align: left; /* Align text inside card to the left */
+}
+
+/* Styling the button based on CSS examples [cite: 122] */
+button {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ID selector for the footer */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
